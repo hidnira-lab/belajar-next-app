@@ -19,7 +19,7 @@ export default function HomeHub() {
                     >
                         <h2 className="text-xl text-white transition-all
                text-shadow-md text-shadow-white/0
-               hover:text-[#767676] hover:text-shadow-white/50">
+               hover:text-shadow-white/50">
                             Connect Card
                         </h2>
                     </Link>

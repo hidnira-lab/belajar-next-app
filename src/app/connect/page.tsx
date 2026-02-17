@@ -80,9 +80,11 @@ export default function ConnectPage() {
                 </div>
 
                 <div className="flex w-full flex-col gap-4">
-                    <a href={"mailto:hidnira@gmail.com"} className="flex w-full items-center justify-center gap-3 rounded-full bg-gradient-to-b from-[#1E1E1E] to-[#3E3E3E] py-3.5 text-sm font-medium text-white hover:from-[#1E1E1E] hover:to-black transition">
+                    <a href={"mailto:hidnira@gmail.com"} className="flex w-full items-center justify-center gap-3 rounded-full
+                    bg-gradient-to-b from-[#1E1E1E] to-[#3E3E3E] py-3.5 text-sm font-medium
+                    text-white hover:from-[#1E1E1E] hover:to-black transition">
                         <FaGoogle/>
-                        <p className="text-base">
+                        <p className="text-base transition-all text-shadow-md text-shadow-white/0 hover:text-shadow-white/50">
                             Contact via <span className="font-bold">Gmail</span>
                         </p>
                     </a>
@@ -92,7 +94,7 @@ export default function ConnectPage() {
                        rel="noopener noreferrer"
                        className="flex w-full items-center justify-center gap-3 rounded-full bg-gradient-to-b from-[#1E1E1E] to-[#3E3E3E] py-3.5 text-sm font-medium text-white hover:from-[#1E1E1E] hover:to-black transition">
                         <FaLinkedinIn/>
-                        <p className="text-base">
+                        <p className="text-base transition-all text-shadow-md text-shadow-white/0 hover:text-shadow-white/50">
                             Connect via <span className="font-bold">Linked In</span>
                         </p>
                     </a>
@@ -102,7 +104,7 @@ export default function ConnectPage() {
                        rel="noopener noreferrer"
                        className="flex w-full items-center justify-center gap-3 rounded-full bg-gradient-to-b from-[#1E1E1E] to-[#3E3E3E] py-3.5 text-sm font-medium text-white hover:from-[#1E1E1E] hover:to-black transition">
                         <FaInstagram/>
-                        <p className="text-base">
+                        <p className="text-base transition-all text-shadow-md text-shadow-white/0 hover:text-shadow-white/50">
                             Find me <span className="font-bold">@hidnira</span>
                         </p>
                     </a>
