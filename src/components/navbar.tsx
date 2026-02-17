@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export default function Navbar() {
     return (
-        <nav className="fixed left-1/2 top-6 z-50 flex -translate-x-1/2 items-center gap-12
-        bg-white/10 backdrop-blur-[2px] rounded-full border border-white/40 py-2 px-6
+        <nav className="fixed left-1/2 top-6 z-50 flex -translate-x-1/2 items-center gap-6 md:gap-12
+        bg-gradient-to-b from-[#EFEFEF]/0 to-[#C3C3C3]/20 backdrop-blur-[2px] rounded-full border border-white/40 py-2 px-6
         ">
 
-            <Link href="/" className="flex items-center pl-2 transition-transform hover:scale-105 active:scale-95">
+            <Link href="/" className="flex shrink-0 items-center pl-2 transition-transform hover:scale-105 active:scale-95">
                 <Image
                     src="/hidnira.svg"
                     alt="Hidnira Logo"

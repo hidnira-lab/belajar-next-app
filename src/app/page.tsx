@@ -1,14 +1,26 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function HomeHub() {
     return (
         <main className="flex min-h-screen flex-col items-center justify-center p-4 text-black
-        bg-[url('/TEXTURE.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
+        bg-gradient-to-b from-[#EFEFEF] to-[#C3C3C3] bg-cover bg-center bg-no-repeat bg-fixed">
             <div className="flex max-w-2xl flex-col items-center text-center">
 
-                <h1 className="mb-2 text-4xl font-bold tracking-tight">Hidnira's Lab</h1>
+                <div className="relative mb-4 h-28 w-28 overflow-hidden drop-shadow-md/25
+                    cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-95">
+                    <Image
+                        src="/hids-avatar-3.svg"
+                        alt="Hidayat N. H."
+                        fill
+                        className="object-contain"
+                    />
+                </div>
+
+                <h1 className="mb-2 text-4xl font-bold tracking-tight">
+                    Hidnira's Lab</h1>
                 <p className="mb-10 text-[#767676]">
-                    Kumpulan project eksplorasi Next.js oleh Hidayat N. H.
+                    Tempat eksplorasi Next.js sampe guwehj paham
                 </p>
 
                 <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-1 drop-shadow-md/25">
