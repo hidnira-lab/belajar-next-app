@@ -28,7 +28,8 @@ export default function ConnectPage() {
 
                 <p className="text-sm text-[#767676]">Hey, I'm</p>
                 <h1 className="text-2xl font-bold text-[#1E1E1E]">Hidayat N. H.</h1>
-                <p className="mb-4 text-md text-[#1E1E1E]">
+                <div className="mb-4">
+                    <p className="text-md text-[#1E1E1E]">
                     <Typewriter
                         options={{
                             strings: ["UI/UX Designer",
@@ -38,7 +39,9 @@ export default function ConnectPage() {
                             loop: true,
                         }}
                     />
-                </p>
+                    </p>
+                </div>
+
 
                 <div className="mb-8 flex gap-2 text-[#767676]">
                     <a href={"https://open.spotify.com/user/31kftsg22ylbqnssbb63anrj7lza?si=3f27f90df2764afd"}
