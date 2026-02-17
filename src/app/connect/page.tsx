@@ -9,8 +9,8 @@ export default function ConnectPage() {
     const [isSeriousFace, setIsSeriousFace] = useState(false);
 
     return (
-        <main className="flex min-h-screen flex-col items-center justify-center p-4 text-black
-                 bg-[url('/TEXTURE.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
+        <main className="flex min-h-screen flex-col items-center justify-center p-4 pt-32
+        text-black bg-[url('/TEXTURE.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
 
             <div className="relative z-10 flex w-full max-w-[400px] flex-col items-center rounded-[40px] bg-gradient-to-b from-white to-[#C3C3C3] p-10 shadow-xl">
 
@@ -28,7 +28,7 @@ export default function ConnectPage() {
 
                 <p className="text-sm text-[#767676]">Hey, I'm</p>
                 <h1 className="text-2xl font-bold text-[#1E1E1E]">Hidayat N. H.</h1>
-                <p className="text-md text-[#1E1E1E]">
+                <p className="text-md text-[#1E1E1E] mb-4">
                     <Typewriter
                         options={{
                             strings: ["UI/UX Designer",

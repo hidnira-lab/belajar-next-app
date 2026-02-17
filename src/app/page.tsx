@@ -15,7 +15,10 @@ export default function HomeHub() {
 
                     <Link
                         href="/connect"
-                        className="flex flex-col items-center justify-center rounded-full bg-gradient-to-b from-[#1E1E1E] to-[#3E3E3E] py-3.5 text-sm font-medium text-white hover:from-[#1E1E1E] hover:to-black transition"
+                        className="flex flex-col items-center justify-center rounded-full
+                        bg-gradient-to-b from-[#1E1E1E] to-[#3E3E3E]
+                        py-3.5 text-sm font-medium text-white
+                        hover:from-[#1E1E1E] hover:to-black transition"
                     >
                         <h2 className="text-xl text-white transition-all
                text-shadow-md text-shadow-white/0
