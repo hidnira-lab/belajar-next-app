@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { FaGoogle, FaLinkedinIn, FaInstagram, FaSpotify, FaDiscord, FaPinterestP } from "react-icons/fa";
+import Typewriter from 'typewriter-effect';
 
 export default function ConnectPage() {
     const [isSeriousFace, setIsSeriousFace] = useState(false);
@@ -26,7 +27,18 @@ export default function ConnectPage() {
                 </div>
 
                 <p className="text-sm text-[#767676]">Hey, I'm</p>
-                <h1 className="mb-4 text-2xl font-bold text-[#1E1E1E]">Hidayat N. H.</h1>
+                <h1 className="text-2xl font-bold text-[#1E1E1E]">Hidayat N. H.</h1>
+                <p className="mb-4 text-md text-[#1E1E1E]">
+                    <Typewriter
+                        options={{
+                            strings: ["UI/UX Designer",
+                                "Software Developer",
+                                "Visual Enthusiast"],
+                            autoStart: true,
+                            loop: true,
+                        }}
+                    />
+                </p>
 
                 <div className="mb-8 flex gap-2 text-[#767676]">
                     <a href={"https://open.spotify.com/user/31kftsg22ylbqnssbb63anrj7lza?si=3f27f90df2764afd"}
