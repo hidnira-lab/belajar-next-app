@@ -1,65 +1,105 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+import Image from "next/image";
+import { useState } from "react";
+import { FaGoogle, FaLinkedinIn, FaInstagram, FaSpotify, FaDiscord, FaPinterestP } from "react-icons/fa";
+
+export default function ConnectPage() {
+    const [isSeriousFace, setIsSeriousFace] = useState(false);
+
+    return (
+        <main className="flex min-h-screen flex-col items-center justify-center p-4 text-black
+                 bg-[url('/TEXTURE.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
+
+            <div className="relative z-10 flex w-full max-w-[400px] flex-col items-center rounded-[40px] bg-gradient-to-b from-white to-[#C3C3C3] p-10 shadow-xl">
+
+                <div
+                    onClick={() => setIsSeriousFace(!isSeriousFace)}
+                    className="relative mb-4 h-28 w-28 overflow-hidden drop-shadow-md/25
+                    cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-95">
+                    <Image
+                        src={isSeriousFace ? "/hids-avatar-2.svg" : "/hids-avatar.svg"}
+                        alt="Hidayat N. H."
+                        fill
+                        className="object-contain"
+                    />
+                </div>
+
+                <p className="text-sm text-[#767676]">Hey, I'm</p>
+                <h1 className="mb-4 text-2xl font-bold text-[#1E1E1E]">Hidayat N. H.</h1>
+
+                <div className="mb-8 flex gap-2 text-[#767676]">
+                    <a href={"https://open.spotify.com/user/31kftsg22ylbqnssbb63anrj7lza?si=3f27f90df2764afd"}
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="group relative z-10 p-3 cursor-pointer transition-all hover:bg-white/20
+                        bg-white/10 backdrop-blur-[2px]
+                        rounded-2xl border border-white/10
+                        before:content-[''] before:absolute before:inset-0
+                        before:rounded-2xl before:border before:border-white/20"
+                    >
+                        <FaSpotify className="relative z-10 text-xl transition-colors duration-300 group-hover:text-[#1A1A1A]"/>
+                    </a>
+
+                    <a href={"https://discord.com/users/274777315114876929"}
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="group relative z-10 p-3 cursor-pointer transition-all hover:bg-white/20
+                        bg-white/10 backdrop-blur-[2px]
+                        rounded-2xl border border-white/10
+                        before:content-[''] before:absolute before:inset-0
+                        before:rounded-2xl before:border before:border-white/20"
+                    >
+                        <FaDiscord className="relative z-10 text-xl transition-colors duration-300 group-hover:text-[#1A1A1A]"/>
+                    </a>
+
+                    <a href={"https://pinterest.com/hidnira/"}
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="group relative z-10 p-3 cursor-pointer transition-all hover:bg-white/20
+                        bg-white/10 backdrop-blur-[2px]
+                        rounded-2xl border border-white/10
+                        before:content-[''] before:absolute before:inset-0
+                        before:rounded-2xl before:border before:border-white/20"
+                    >
+                        <FaPinterestP className="relative z-10 text-xl transition-colors duration-300 group-hover:text-[#1A1A1A]"/>
+                    </a>
+                </div>
+
+                <div className="flex w-full flex-col gap-4">
+                    <a href={"mailto:hidnira@gmail.com"} className="flex w-full items-center justify-center gap-3 rounded-full bg-gradient-to-b from-[#1E1E1E] to-[#3E3E3E] py-3.5 text-sm font-medium text-white hover:from-[#1E1E1E] hover:to-black transition">
+                        <FaGoogle/>
+                        <p className="text-base">
+                            Contact via <span className="font-bold">Gmail</span>
+                        </p>
+                    </a>
+
+                    <a href={"https://www.linkedin.com/in/hidayatnh/"}
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="flex w-full items-center justify-center gap-3 rounded-full bg-gradient-to-b from-[#1E1E1E] to-[#3E3E3E] py-3.5 text-sm font-medium text-white hover:from-[#1E1E1E] hover:to-black transition">
+                        <FaLinkedinIn/>
+                        <p className="text-base">
+                            Contact via <span className="font-bold">Linked In</span>
+                        </p>
+                    </a>
+
+                    <a href={"https://instagram.com/hidnira"}
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="flex w-full items-center justify-center gap-3 rounded-full bg-gradient-to-b from-[#1E1E1E] to-[#3E3E3E] py-3.5 text-sm font-medium text-white hover:from-[#1E1E1E] hover:to-black transition">
+                        <FaInstagram/>
+                        <p className="text-base">
+                            Find me <span className="font-bold">@hidnira</span>
+                        </p>
+                    </a>
+                </div>
+
+                <p className="mt-8 text-center text-base font-medium text-[#1E1E1E]">
+                    "Let's create something<br />
+                    <span className="italic">impactful</span> <span className="text-[#767676]">together!"</span>
+                </p>
+            </div>
+        </main>
+    );
 }
