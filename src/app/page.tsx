@@ -80,7 +80,7 @@ export default function ConnectPage() {
                        className="flex w-full items-center justify-center gap-3 rounded-full bg-gradient-to-b from-[#1E1E1E] to-[#3E3E3E] py-3.5 text-sm font-medium text-white hover:from-[#1E1E1E] hover:to-black transition">
                         <FaLinkedinIn/>
                         <p className="text-base">
-                            Contact via <span className="font-bold">Linked In</span>
+                            Connect via <span className="font-bold">Linked In</span>
                         </p>
                     </a>
 
